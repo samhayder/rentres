@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Mali:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
+/* font-family: 'Mali', cursive; */
+/* font-family: 'Caveat', cursive; */
+
+:root {
+	--mainDark: #242325;
+	--mainGreen: #61e786;
+	--mainWhite: #ffffff;
+	--mainBlack: #292f36;
+	--mainGrey: #eeeeee;
+}
+
+body {
+	font-family: 'Mali', cursive;
+	color: var(--mainDark);
+	background: var(--mainWhite);
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+	color: inherit;
+	text-transform: uppercase;
+}
+
+.text-slant {
+	font-family: "Caveat", cursive;
+}
+.text-white {
+	color: var(--mainWhite);
+}
+.text-green {
+	color: var(--mainGreen);
+}
+
+.boxed-btn {
+	color: var(--mainGreen);
+	border: 0.1rem solid var(--mainGreen);
+	padding: 0.4rem 0.6rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	transition: all 1s ease-in-out;
+}
+.boxed-btn:hover {
+	background: var(--mainGreen);
+	color: var(--mainBlack);
+}
+
+/*------------------------------
+            HEADER
+--------------------------------*/
+
+.nav-link:hover {
+	color: var(--mainGreen);
+}
+
+.contact-icon {
+	color: var(--mainGreen);
+	border: 0.1rem solid var(--mainGreen);
+	border-radius: 50%;
+	padding: 0.5rem;
+}
+
+/*------------------------------
+            Homepage
+--------------------------------*/
+.homepage {
+	background: var(--mainGrey);
+	min-height: calc(100vh - 101px);
+	position: relative;
+}
+
+.homepage-content-bottom {
+	background: var(--mainGreen);
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+}
+
+.homepage-img {
+	background: url('./resources/img/bannerBcg.jpeg')center/cover fixed no-repeat;
+	min-height: calc(100vh - 101px);
+	position: relative;
+}
+.homepage-img-bottom {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	height: 120px;
+	display: flex;
+	align-items: center;
+}
+
+/*------------------------------
+            About
+--------------------------------*/
+.about-img-container {
+	position: relative;
+}
+
+.img-icons {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	font-size: 1.5rem;
+}
+
+.img-icons a {
+	display: inline-block;
+	background: var(--mainDark);
+	color: var(--mainWhite);
+	padding: 0.5rem;
+	transition: all 0.5s ease;
+}
+
+.img-icons a:hover {
+	background: var(--mainGreen);
+}
+
+.img-icons a:nth-child(2) {
+	background: var(--mainGreen);
+}
+
+.title-underline {
+	position: relative;
+	width: 12rem;
+	height: 0.3rem;
+	margin: 0 auto;
+	border-radius: 3rem;
+}
+
+.title-underline-center {
+	position: absolute;
+	width: 50%;
+	height: 0.6rem;
+	background: var(--mainGreen);
+	top: 50%;
+	left: 50%;
+	border-radius: 1rem;
+	transform: translate(-50%, -50%);
+}
+
+blockquote {
+	border-left: 0.5rem solid var(--mainGreen);
+	margin-top: 1rem;
+}
+
+blockquote p {
+	font-size: 1.5rem;
+}
+
+/*------------------------------
+            Featured
+--------------------------------*/
+.featured {
+	background: var(--mainGrey);
+}
+
+.card {
+	transition: all 1s ease-in-out;
+}
+.about .card:hover {
+	transform: rotate(3deg);
+	box-shadow: 0 10px 15px;
+}
+.featured .card:hover {
+	transform: rotate(3deg);
+	box-shadow: 0 10px 15px;
+}
+
+/*------------------------------
+            Contact
+--------------------------------*/
+.contact {
+	background: var(--mainGreen);
+	color: var(--mainWhite);
+}
+
+.contact-btn {
+	background: transparent;
+	color: var(--mainWhite);
+	text-transform: capitalize;
+	border: 0.1rem solid var(--mainWhite);
+	transition: all 0.5s ease-in-out;
+}
+.contact-btn:hover {
+	color: var(--mainGreen);
+	background: var(--mainWhite);
+}
+
+/*------------------------------
+            Service
+--------------------------------*/
+.service {
+	background: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
+		url("./resources/img/bannerBcg.jpeg")center/cover fixed no-repeat;
+}
+
+.img-container {
+	position: relative;
+}
+
+a.service-details {
+	text-transform: capitalize;
+	padding: 0.5rem;
+	background: var(--mainGreen);
+	color: var(--mainWhite);
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.service-icon {
+	color: var(--mainGreen);
+	border: 0.1rem solid var(--mainGreen);
+	display: inline-table;
+	padding: 0.5rem;
+	font-size: 1.5rem;
+	transition: all 0.5s ease;
+}
+
+.service-icon:hover {
+	background: var(--mainGreen);
+	color: var(--mainWhite);
+}
+
+.service-link {
+	text-transform: capitalize;
+	color: var(--mainGreen);
+	transition: all 0.5s ease;
+}
+
+.service-link:hover {
+	background: var(--mainGreen);
+	color: var(--mainWhite);
+	padding: 0.3rem;
+}
+
+/*------------------------------
+            Homepage
+--------------------------------*/
