@@ -198,8 +198,9 @@ blockquote p {
 /*------------------------------
             Service
 --------------------------------*/
-.service {
-	background: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
+.service,
+.tour {
+	background: linear-gradient(90deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%),
 		url("./resources/img/bannerBcg.jpeg")center/cover fixed no-repeat;
 }
 
@@ -242,6 +243,83 @@ a.service-details {
 	background: var(--mainGreen);
 	color: var(--mainWhite);
 	padding: 0.3rem;
+}
+
+/*------------------------------
+            Gallery
+--------------------------------*/
+.gallery-btn {
+    padding: 0.5rem;
+    transition: all 1s ease;
+}
+
+.gallery-btn:hover {
+    background: var(--mainGreen);
+    color: var(--mainWhite);
+}
+
+.gallery .img-container {
+    transition: all 1s ease;
+}
+
+.gallery .img-container:hover {
+    background: rgba(0,0,0,0.8);
+}
+
+.gallery .img-container img {
+    transition: all 1s ease;
+}
+
+.gallery .img-container img:hover {
+    opacity: 0.6;
+}
+
+.gallery .gallery-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--mainWhite);
+    font-size: 2rem;
+	margin-top: 1rem;
+	cursor: pointer;
+    transition: all 1s ease;
+    opacity: 0;
+    visibility: hidden;
+}
+.gallery .img-container:hover .gallery-icon {
+    opacity: 1;
+    visibility: visible;
+    margin-top: -1rem;
+}
+
+.gallery .service-details {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 1s ease;
+}
+.gallery .img-container:hover .service-details {
+    opacity: 1;
+    visibility: visible;
+}
+
+/*------------------------------
+            Tour
+--------------------------------*/
+.tour-icon {
+    font-size: 2rem;
+    color: var(--mainGreen);
+    background: var(--mainWhite);
+    padding: 0.7rem;
+    border-radius: 30%;
+    cursor: pointer;
+    margin-bottom: 1.5rem;
+    transition: all 1s ease;
+}
+
+.tour-icon:hover {
+    color: var(--mainWhite);
+    background: var(--mainGreen);
 }
 
 /*------------------------------
