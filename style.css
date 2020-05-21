@@ -323,5 +323,8 @@ a.service-details {
 }
 
 /*------------------------------
-            Homepage
+            Footer
 --------------------------------*/
+.footer{
+	background: var(--mainDark);
+}
