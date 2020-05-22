@@ -3,22 +3,6 @@
 /* font-family: 'Mali', cursive; */
 /* font-family: 'Caveat', cursive; */
 
-:root {
-	--mainDark: #242325;
-	--mainGreen: #61e786;
-	--mainWhite: #ffffff;
-	--mainBlack: #292f36;
-	--mainGrey: #eeeeee;
-}
-
-body {
-	font-family: 'Mali', cursive;
-	color: var(--mainDark);
-	background: var(--mainWhite);
-	margin: 0;
-	padding: 0;
-}
-
 a {
 	text-decoration: none;
 }
@@ -40,10 +24,13 @@ a:hover {
 
 .boxed-btn {
 	color: var(--mainGreen);
+	border: 1.6px solid var(--mainGreen);
 	border: 0.1rem solid var(--mainGreen);
+	padding: 6.4px 9.6px;
 	padding: 0.4rem 0.6rem;
 	font-weight: 700;
 	text-transform: uppercase;
+	-webkit-transition: all 1s ease-in-out;
 	transition: all 1s ease-in-out;
 }
 .boxed-btn:hover {
@@ -61,8 +48,10 @@ a:hover {
 
 .contact-icon {
 	color: var(--mainGreen);
+	border: 1.6px solid var(--mainGreen);
 	border: 0.1rem solid var(--mainGreen);
 	border-radius: 50%;
+	padding: 8px;
 	padding: 0.5rem;
 }
 
@@ -93,8 +82,12 @@ a:hover {
 	left: 0;
 	bottom: 0;
 	height: 120px;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	align-items: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 }
 
 /*------------------------------
@@ -108,7 +101,9 @@ a:hover {
 	position: absolute;
 	bottom: 0;
 	left: 50%;
-	transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+	        transform: translateX(-50%);
+	font-size: 24px;
 	font-size: 1.5rem;
 }
 
@@ -116,7 +111,9 @@ a:hover {
 	display: inline-block;
 	background: var(--mainDark);
 	color: var(--mainWhite);
+	padding: 8px;
 	padding: 0.5rem;
+	-webkit-transition: all 0.5s ease;
 	transition: all 0.5s ease;
 }
 
@@ -130,7 +127,9 @@ a:hover {
 
 .title-underline {
 	position: relative;
+	width: 192px;
 	width: 12rem;
+	height: 4.8px;
 	height: 0.3rem;
 	margin: 0 auto;
 	border-radius: 3rem;
@@ -139,20 +138,25 @@ a:hover {
 .title-underline-center {
 	position: absolute;
 	width: 50%;
+	height: 9.6px;
 	height: 0.6rem;
 	background: var(--mainGreen);
 	top: 50%;
 	left: 50%;
 	border-radius: 1rem;
-	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	        transform: translate(-50%, -50%);
 }
 
 blockquote {
+	border-left: 8px solid var(--mainGreen);
 	border-left: 0.5rem solid var(--mainGreen);
+	margin-top: 16px;
 	margin-top: 1rem;
 }
 
 blockquote p {
+	font-size: 24px;
 	font-size: 1.5rem;
 }
 
@@ -164,14 +168,17 @@ blockquote p {
 }
 
 .card {
+	-webkit-transition: all 1s ease-in-out;
 	transition: all 1s ease-in-out;
 }
 .about .card:hover {
-	transform: rotate(3deg);
+	-webkit-transform: rotate(3deg);
+	        transform: rotate(3deg);
 	box-shadow: 0 10px 15px;
 }
 .featured .card:hover {
-	transform: rotate(3deg);
+	-webkit-transform: rotate(3deg);
+	        transform: rotate(3deg);
 	box-shadow: 0 10px 15px;
 }
 
@@ -187,7 +194,9 @@ blockquote p {
 	background: transparent;
 	color: var(--mainWhite);
 	text-transform: capitalize;
+	border: 1.6px solid var(--mainWhite);
 	border: 0.1rem solid var(--mainWhite);
+	-webkit-transition: all 0.5s ease-in-out;
 	transition: all 0.5s ease-in-out;
 }
 .contact-btn:hover {
@@ -200,6 +209,8 @@ blockquote p {
 --------------------------------*/
 .service,
 .tour {
+	background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%),
+		url("./resources/img/bannerBcg.jpeg")center/cover fixed no-repeat;
 	background: linear-gradient(90deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%),
 		url("./resources/img/bannerBcg.jpeg")center/cover fixed no-repeat;
 }
@@ -210,21 +221,27 @@ blockquote p {
 
 a.service-details {
 	text-transform: capitalize;
+	padding: 8px;
 	padding: 0.5rem;
 	background: var(--mainGreen);
 	color: var(--mainWhite);
 	position: absolute;
 	bottom: 0;
 	left: 50%;
-	transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+	        transform: translateX(-50%);
 }
 
 .service-icon {
 	color: var(--mainGreen);
+	border: 1.6px solid var(--mainGreen);
 	border: 0.1rem solid var(--mainGreen);
 	display: inline-table;
+	padding: 8px;
 	padding: 0.5rem;
+	font-size: 24px;
 	font-size: 1.5rem;
+	-webkit-transition: all 0.5s ease;
 	transition: all 0.5s ease;
 }
 
@@ -236,12 +253,14 @@ a.service-details {
 .service-link {
 	text-transform: capitalize;
 	color: var(--mainGreen);
+	-webkit-transition: all 0.5s ease;
 	transition: all 0.5s ease;
 }
 
 .service-link:hover {
 	background: var(--mainGreen);
 	color: var(--mainWhite);
+	padding: 4.8px;
 	padding: 0.3rem;
 }
 
@@ -249,7 +268,9 @@ a.service-details {
             Gallery
 --------------------------------*/
 .gallery-btn {
+    padding: 8px;
     padding: 0.5rem;
+    -webkit-transition: all 1s ease;
     transition: all 1s ease;
 }
 
@@ -259,6 +280,7 @@ a.service-details {
 }
 
 .gallery .img-container {
+    -webkit-transition: all 1s ease;
     transition: all 1s ease;
 }
 
@@ -267,39 +289,51 @@ a.service-details {
 }
 
 .gallery .img-container img {
+    -webkit-transition: all 1s ease;
     transition: all 1s ease;
 }
 
 .gallery .img-container img:hover {
     opacity: 0.6;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
 }
 
 .gallery .gallery-icon {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
     color: var(--mainWhite);
+    font-size: 32px;
     font-size: 2rem;
+	margin-top: 16px;
 	margin-top: 1rem;
 	cursor: pointer;
+    -webkit-transition: all 1s ease;
     transition: all 1s ease;
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
     visibility: hidden;
 }
 .gallery .img-container:hover .gallery-icon {
     opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
     visibility: visible;
+    margin-top: -16px;
     margin-top: -1rem;
 }
 
 .gallery .service-details {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
     visibility: hidden;
+    -webkit-transition: all 1s ease;
     transition: all 1s ease;
 }
 .gallery .img-container:hover .service-details {
     opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
     visibility: visible;
 }
 
@@ -307,13 +341,17 @@ a.service-details {
             Tour
 --------------------------------*/
 .tour-icon {
+    font-size: 32px;
     font-size: 2rem;
     color: var(--mainGreen);
     background: var(--mainWhite);
+    padding: 11.2px;
     padding: 0.7rem;
     border-radius: 30%;
     cursor: pointer;
+    margin-bottom: 24px;
     margin-bottom: 1.5rem;
+    -webkit-transition: all 1s ease;
     transition: all 1s ease;
 }
 
